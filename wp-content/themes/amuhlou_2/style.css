@@ -564,6 +564,8 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+	position: relative;
+	z-index: 99999;
 	margin-bottom:1.5em;
 }
 .main-navigation ul {
