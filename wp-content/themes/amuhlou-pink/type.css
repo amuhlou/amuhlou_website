@@ -1,0 +1,257 @@
+body {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #4d4d4d;	
+	font-size: 80%;
+	line-height: 1.7em;
+}
+
+@font-face {
+	font-family: 'TeX Gyre Adventor Regular';
+	src: url('texgyreadventor-regular.eot');
+	src: local('TeX Gyre Adventor Regular'), local('TeXGyreAdventor-Regular'), url('texgyreadventor-regular.otf') format('opentype');
+}
+
+h1 {
+	font: 27px/30px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+	letter-spacing: 0;
+	color: #db1b87;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+h2 {
+	font: 23px/23px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+	letter-spacing: 0;
+	color: #db1b87;
+	text-transform: lowercase;	
+	font-weight: normal;
+}	
+	.search h2 {
+		font: 21px/21px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+		letter-spacing: 0;
+		color: #DB1B87;
+		text-transform: lowercase;	
+		font-weight: normal;
+	}
+	#logo h1 {
+		font: 60px/68px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+	}
+	h1 a {
+		color: #dc61a9;	
+		font-weight: normal;
+	}
+	h2 a {
+		color: #dc61a9;	
+	}
+	
+	h1 a:hover {
+		color: #f875bf;	
+	}
+	h2 a:hover {
+		color: #f875bf;	
+	}
+h3 {
+	font: 20px/20px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+	letter-spacing: 0;
+	color: #DB1B87;
+	text-transform: lowercase;	
+	font-weight: normal;
+}
+	.post h3 {
+		font: 18px/18px 'Tex Gyre Adventor Regular', 'Arial', sans-serif;
+		}
+	h3 a {
+		font-weight: normal;
+		}
+h4 {
+	font-size: 115%;
+}
+a {
+	color: #662d91;
+	text-decoration: none;
+	font-weight: bold;	
+}
+
+a:hover {
+	color:#8A5BAE;	
+}
+
+a:focus {
+	outline:#999 dotted thin;
+}
+
+input:focus{
+	outline:#999 dotted thin;
+}
+
+p {font-size: 105%;}
+
+.nav li a {
+	color: #dc61a9;
+	font-weight: normal;
+	text-transform: lowercase;
+	font-size: 115%;
+	text-align: center;	
+}
+.nav li a:hover {
+	color: #e122b6;
+
+}
+.entry-meta {
+	color: #a4a3a4;
+	text-transform: uppercase;
+	font-size: 90%;
+}
+	.entry-meta li {
+		line-height: 1.3em;
+	}
+	.entry-meta li span.author {
+		font-size:92%;
+
+	}
+.entry-utility {
+	color: #777;
+	font-style: italic;
+	font-size: 96%;
+}
+	.entry-utility a {
+		color: #88bfc8;
+	}
+.commentlist cite {
+	font-weight: bold;
+	
+	font-style: normal;
+}
+.commentlist li {
+
+	line-height: 1.5em;
+}
+
+.commentlist li a {
+	color: #662D91;
+}
+.commentlist li a:hover {color: #8A5BAE;}
+.commentlist li.bypostauthor a {
+	color: #8DA149;
+}
+
+.commentlist li a:hover {
+	color: #DB1B87;
+}
+
+.commentlist li.bypostauthor a:hover {
+	color: #B1CB59;
+}
+.comment-author {
+	color: #8c8c8c;
+}
+
+#commentform p label, #emailform p label {
+	text-transform: uppercase;
+	color: #a4a3a4;
+}
+
+#commentform p input[type=text], #emailform p input[type=text] {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 110%;
+	color: #4d4d4d;
+
+}
+#search input[type=text] {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 110%;
+	color: #4d4d4d;
+}
+#commentform textarea, #emailform textarea {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 110%;
+	color: #4d4d4d;
+}
+/*--SEARCH RESULTS--*/
+.search ul.post-meta, .archive ul.post-meta {
+	font-size: 90%;
+	color: #a4a3a4;
+	text-transform: uppercase;
+}
+.search p.edit, .archive p.edit {text-align: left;}
+
+p.resultCount {
+	text-transform: uppercase;
+}
+#footer {
+	text-transform: uppercase;
+	color: #a4a3a4;	
+}
+/*--PORTFOLIO SECTION--*/
+.catNav li {}
+.catNav li a {
+	text-transform: lowercase;
+	color: #DC61A9;
+	font-size: 135%;
+	font-weight: normal;
+}
+.catNav li a:hover {
+	color: #DB1B87;
+}
+.catNav li.ui-state-active a {
+	color: #4d4d4d;
+}
+
+#tabs > div .info h4 {
+
+}
+#tabs > div .info h4 a, .projCat .info h4 a {
+	color: #dc61a9;
+}
+
+#tabs > div .info h4 a:hover, .projCat .info h4 a:hover {
+	color: #f875bf;
+}
+
+.projectDetail h2 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	color: #4d4d4d;
+	font-size: 150%;
+}
+
+.project p.goal {
+	font-size: 115%;
+}
+
+
+.bottom ul {
+	text-transform: lowercase;
+}
+
+#pager a {
+	font-size: 105%;
+	text-align: center;
+	color: #565656;	
+}
+#pager a.activeSlide {
+	color: #31a1b2;
+}
+.resumeInfo h3 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 18px;
+}
+
+.resumeInfo h3 span {
+	font-size: 14px;
+	color: #BFBFBF;
+}
+
+.resumeInfo h4 {
+	font-size: 15px;
+	color: #6F6F6F;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+
+#footer p {
+	font-size: 95%;
+	}
+/*--ADMIN VIEW--*/
+
+.edit {
+	text-align: right;
+}

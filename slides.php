@@ -1,0 +1,9 @@
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide1.jpg" alt="photo 1" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide2.jpg" alt="photo 2" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide3.jpg" alt="photo 3" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide4.jpg" alt="photo 4" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide5.jpg" alt="photo 5" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide6.jpg" alt="photo 6" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide7.jpg" alt="photo 7" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide8.jpg" alt="photo 8" />
+<img src="http://dev.amuhlou.com/wp-content/themes/amuhlou/images/slides/slide9.jpg" alt="photo 9" />

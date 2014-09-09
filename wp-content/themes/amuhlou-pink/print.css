@@ -1,0 +1,26 @@
+.nav {display:none;}
+#banner{display: none;}
+#logo {margin: 0px;}
+#logo h1 {border-bottom:4px solid #D3E595;width:960px;height:75px;margin-bottom: 30px;}
+#logo h1 a {}
+#logo h1 a span {text-indent: 0;position: relative;}
+#main {padding: 0px 15px;}
+#content {width: 930px;}
+#sidebar {display:none;}
+.entry-meta {width:930px;}
+#share{display:none;}
+#respond{display:none;}
+#footer {border-top:4px solid #D3E595;padding: 15px;}
+#footer .fRight {display:none;}
+.entry-meta li {display:none;}
+.entry-meta li.first-child {display:block;}
+.entry-meta .edit {display:none;}
+.commentlist {width: 930px;}
+.commentlist li {width: 870px;border-top: 4px solid #34BED3;}
+.commentlist li .comment-edit-link {display:none;}
+#nav-below {display:none;}
+.entry-content {page-break-after:always;}
+.entry-content a[href]:after, #footer a[href]:after {
+content: " (" attr(href) ") ";
+font-size: 90%;} 
+
