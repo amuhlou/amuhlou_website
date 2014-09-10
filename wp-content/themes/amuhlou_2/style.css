@@ -143,18 +143,18 @@ body {
 	
 }
 #masthead {
-	margin: 30px 0px 0px 0;
+	margin: 30px 0px 30px 0;
 	float:left;
 	width:100%;
 	background: transparent url('images/bg-border.png') left bottom no-repeat scroll;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 	.site-branding {float:left;width:100%;text-align: center;}
 	
 
 .entryThumb {float:left; margin: 0 30px 0 0;}
 .row {float:left; width:100%;clear:both;}
-#colophon {clear:both;background: transparent url('images/bg-border.png') left top no-repeat scroll;text-align:center;padding: 20px 0px 20px; margin: 20px 0px 0px;}
+#colophon {clear:both;background: transparent url('images/bg-border.png') center top no-repeat scroll;text-align:center;padding: 20px 0px 20px; margin: 20px 0px 0px;}
 .home h2 {}
 .home h3 a {text-decoration:none;}
 .fancybox img {border: 3px solid #b7b7b7;}
