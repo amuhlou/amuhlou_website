@@ -1,39 +1,142 @@
 === Custom Post Type Permalinks ===
-Contributors: Toro_Unit
-Tags: permalink,permalinks,custom post type,custom taxonomy,cms
-Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 0.9.2.1
+Contributors:      Toro_Unit,inc2734,ixkaito
+Donate link:       http://www.amazon.co.jp/registry/wishlist/COKSXS25MVQV
+Tags:              permalink,permalinks,custom post type,custom taxonomy,cms
+Requires at least: 4.1
+Tested up to:      4.3
+Stable tag:        1.0.5
+License: GPLv2 or Later
 
 Lets you edit the permalink of custom post type.
 
 == Description ==
+
 Custom Post Type Permalinks lets you edit the permalink structure of custom post type.
 
 Change custom taxonomy archive's permalink to "example.org/post_type/taxonomy_name/term_slug". Can disable this fix.
 
-Nightly Build https://github.com/Toro-Unit/custom-post-type-permalinks
+And support wp_get_archives( "post_type=foo" ).
 
-Donation: Please send Amazon Gift to donate[at]torounit.com.
+[This Plugin published on GitHub.](https://github.com/torounit/custom-post-type-permalinks)
 
+Donation: Please send amazon.co.jp Gift to donate[at]torounit.com.
+
+= Translators =
+* French(fr_FR) - [Geoffrey Crofte](http://geoffrey.crofte.fr/)
+* Japanese(ja) - [Toro_Unit](http://www.torounit.com/)
+* Russian(ru_RU) - [Olart](http://olart.ru), [Natali_Z](https://profiles.wordpress.org/natali_z)
+
+== Setting on Code ==
+
+Example:
+
+`
+register_post_type( 'foo',
+	array(
+		"public" => true,
+		'has_archive' => true,
+		"rewrite" => [
+			"with_front" => true
+		],
+		"cptp_permalink_structure" => "%post_id%"
+	)
+);
+`
 
 
 == Installation ==
 
-1. Download the custom-post-type-permalinks.zip file to your computer.
-1. Unzip the file.
-1. Upload the `custom-post-type-permalinks` directory to your `/wp-content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress.
+* Download the custom-post-type-permalinks.zip file to your computer.
+* Unzip the file.
+* Upload the `custom-post-type-permalinks` directory to your `/wp-content/plugins/` directory.
+* Activate the plugin through the 'Plugins' menu in WordPress.
 
 That's it. You can access the permalinks setting by going to *Settings -> Permalinks*.
 
 
 == Screenshots ==
 
-1. screenshot-1.png
+* screenshot-1.png
 
 
 == Changelog ==
+
+= 1.0.5 =
+* admin bug fix. thanks [ixkaito](https://profiles.wordpress.org/ixkaito) !
+* Translation Update Thanks [Natali_Z](https://profiles.wordpress.org/natali_z) !
+
+= 1.0.4 =
+* option bug fix.
+
+= 1.0.3 =
+* add category rule, if only attached category to post type.
+
+= 1.0.2 =
+* category slug bug fix.
+
+= 1.0.0 =
+* Set Permalink enable register_post_type.
+* Enable add post type query to taxonomy archives.
+* Use Class Autoloader.
+* Create Rewrite Rule on `wp_loaded` action.
+* WordPress Code Format Fix.
+* CPTP_Module_Permalink Bug Fix.
+* Bug Fix.
+* Use Semantic Versioning.
+* Date Structure Fix.
+* Use Category Base.
+
+= 0.9.7 =
+* Adding date slug only conflicting %post_id%.
+* Change taxonomy link rewrite rule. Use post_type.
+* Can change template include custom taxonomy.
+
+= 0.9.6 =
+* Category and author.
+* French Transration. Thanks Geoffrey!
+* Hierarchial Term Fix.
+
+= 0.9.5.6 =
+* Strict Standard Error Fix.
+
+= 0.9.5.4 =
+* archive link bug fix.
+* Tested Up 3.9
+
+= 0.9.5.3 =
+* “/”bug fix.
+* taxonomy tmplate bug fix.
+
+= 0.9.5.2 =
+* Archives Rewrite Fix.
+
+= 0.9.5.1 =
+* Admin Bug Fix.
+
+= 0.9.5 =
+* Big change plugin architecture.
+* Show has_archive, with_front.
+
+= 0.9.4 =
+* Internal release.
+
+= 0.9.3.3 =
+* has_archive Bug Fix.
+* Fixed a bug in the link, including the extension.
+
+= 0.9.3.2 =
+* wp_get_archives Bug Fix.
+
+= 0.9.3.1 =
+* Tested 3.6
+* Bug Fix.
+
+
+= 0.9.3 =
+* Admin page fix.
+* slngle pageing link fix.
+* Add Russian translation.
+
 
 = 0.9 =
 * Add custom post type archive only has_archive->true
