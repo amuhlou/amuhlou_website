@@ -237,7 +237,10 @@ display: block;
 .navbar-brand > img {
 	
 }
-.navbar-collapse {border-top: none;}
+.navbar-collapse {
+	border-top: none;
+	margin-top: 1em;
+}
 
 @media screen and (max-width: 767px) {
 	.navbar {
