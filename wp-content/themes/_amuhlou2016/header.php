@@ -64,7 +64,18 @@
 		</div>
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
+<header id="masthead" class="site-header" role="banner">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
+	<div class="container">
+		<div class="row">
+			<div class="site-header-inner col-sm-12">
 
+				Hi. I'm Amy Bibbings. I make websites.
+
+			</div>
+		</div>
+	</div><!-- .container -->
+</header><!-- #masthead -->
 <div class="main-content">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
