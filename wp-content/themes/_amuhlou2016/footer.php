@@ -20,9 +20,7 @@
 
 				<div class="site-info">
 					<?php do_action( '_amuhlou2016_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_amuhlou2016' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_amuhlou2016' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-                    <a class="credits" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','_amuhlou2016') ?> </a>
+					
 				</div><!-- close .site-info -->
 
 			</div>
