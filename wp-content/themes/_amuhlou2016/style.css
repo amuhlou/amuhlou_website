@@ -256,18 +256,21 @@ display: block;
 
 .site-header {
 	background-color: #ca4d4d;
-	text-align: center;
-	font-size: 2.5em;
+	font-size: 2em;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 600;
-	padding: .75em;
+	padding: 1.5em 0 1.2em;
 	margin-bottom: 1em;
 	color: #e9e9e7;
 	border-bottom: 15px solid #3fb0ac;
 }
+.site-header img.alignright {
+	margin: 0;
+}
 .site-header .container {
 	padding-bottom: 0;
 }
+.site-header p {margin-bottom: 0;}
 
 @media screen and (max-width: 767px) {
 	.navbar {	
@@ -286,15 +289,18 @@ display: block;
 		margin-right: 0;
 	}
 	.site-header {
-		font-size:2em;
+		font-size:1.5em;
 	}
+	.site-header img {display: none;}
 }
 
 @media screen and (max-width: 340px) {
 	.site-header {
-		font-size: 1.5em;
+		font-size: 1em;
 		padding: 0.5em;
+
 	}
+	.site-header img {display: none;}
 }
 
 /* Type Styles */
