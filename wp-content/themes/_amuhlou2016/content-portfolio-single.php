@@ -7,10 +7,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<h1 class="page-title"><?php the_title(); ?></h1>
-
-		<div class="entry-meta">
-			<?php _amuhlou2016_posted_on(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -24,13 +20,13 @@
 				'after'  => '</div>',
 			) );
 		?>
-		hello world
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
 		<?php
+			$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
 			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
+			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', '_amuhlou2016' ) );

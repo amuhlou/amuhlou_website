@@ -59,7 +59,11 @@ get_header(); ?>
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
 							_e( 'Links', '_amuhlou2016' );
 
+						elseif ( is_tax('portfolio_tag', 'portfolio_tag') ) :
+							_e( 'Linkssss', '_amuhlou2016' );
+
 						else :
+
 							_e( 'Portfolio', '_amuhlou2016' );
 
 						endif;
@@ -97,5 +101,7 @@ get_header(); ?>
 
 	</div><!-- .content-padder -->
 
+<?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
+<?php endif; ?>
 <?php get_footer(); ?>

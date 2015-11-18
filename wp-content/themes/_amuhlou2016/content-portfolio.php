@@ -17,13 +17,9 @@
 	<header>
 		<h2 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
-		<?php if ( 'portfolio' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php _amuhlou2016_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		
 	</header><!-- .entry-header -->
-
+	<div id="thumb"><?php the_post_thumbnail('medium'); ?></div>
 	<?php if ( is_search() || is_archive() ) : // Only display Excerpts for Search and Archive Pages ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
@@ -43,8 +39,9 @@
 	<footer class="entry-meta">
 		<?php if ( 'portfolio' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
+				$categories_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
+				//$categories_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
 				if ( $categories_list && _amuhlou2016_categorized_blog() ) :
 			?>
 			<span class="cat-links">
@@ -54,7 +51,8 @@
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', '_amuhlou2016' ) );
+				$tags_list = get_the_term_list( $post->ID, 'portfolio_tag', '', ', ', '' );
+				/* $tags_list = get_the_tag_list( '', __( ', ', '_amuhlou2016' ) );*/
 				if ( $tags_list ) :
 			?>
 			<span class="tags-links">

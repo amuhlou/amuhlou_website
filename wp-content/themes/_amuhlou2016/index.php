@@ -36,5 +36,7 @@ get_header(); ?>
 
 	<?php endif; ?>
 
+<?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
+<?php endif; ?>
 <?php get_footer(); ?>

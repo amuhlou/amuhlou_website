@@ -21,5 +21,7 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
+<?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
+<?php endif; ?>
 <?php get_footer(); ?>
