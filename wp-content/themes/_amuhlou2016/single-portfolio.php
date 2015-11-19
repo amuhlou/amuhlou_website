@@ -1,11 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * The Template for displaying all single posts.
  *
  * @package _amuhlou2016
  */
@@ -14,7 +9,9 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'page' ); ?>
+		<?php get_template_part( 'content-portfolio', 'single' ); ?>
+
+		<?php _amuhlou2016_content_nav( 'nav-below' ); ?>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template
@@ -23,6 +20,7 @@ get_header(); ?>
 		?>
 
 	<?php endwhile; // end of the loop. ?>
+
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
 <?php endif; ?>

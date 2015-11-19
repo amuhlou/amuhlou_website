@@ -81,6 +81,12 @@ function _amuhlou2016_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Banner', '_amuhlou2016' ),
+		'id'            => 'hero-banner',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+	) );
 }
 add_action( 'widgets_init', '_amuhlou2016_widgets_init' );
 

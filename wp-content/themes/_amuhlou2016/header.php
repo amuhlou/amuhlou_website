@@ -68,9 +68,16 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
-			<div class="site-header-inner col-sm-12">
+			<div class="site-header-inner col-sm-10 col-sm-offset-1">
 
-				Hi. I'm Amy Bibbings. I make websites.
+				<?php if ( is_active_sidebar( 'hero-banner' ) ) {
+					
+					dynamic_sidebar( 'hero-banner' );
+
+				} else {
+					echo "Hi. I'm Amy Bibbings. I make websites.";
+				}
+				?>
 
 			</div>
 		</div>
@@ -80,5 +87,8 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
+			<?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 			<div id="content" class="main-content-inner col-sm-12 col-md-8">
-
+			<?php else: ?>
+			<div id="content" class="main-content-inner col-md-12">
+			<?php endif; ?>
