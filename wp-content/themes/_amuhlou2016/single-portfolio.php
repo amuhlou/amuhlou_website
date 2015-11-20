@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
-
+        <div class="col-md-10 col-md-offset-1">
 		<?php get_template_part( 'content-portfolio', 'single' ); ?>
 
 		<?php _amuhlou2016_content_nav( 'nav-below' ); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 			if ( comments_open() || '0' != get_comments_number() )
 				comments_template();
 		?>
-
+        </div>
 	<?php endwhile; // end of the loop. ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
