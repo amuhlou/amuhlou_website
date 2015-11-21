@@ -13,19 +13,23 @@ get_header(); ?>
 <?php
 	$args = array(
 	'posts_per_page' => 1,
-	'post__in'  => get_option( 'sticky_posts' ),
-	'ignore_sticky_posts' => 1,
+	'meta_key' => 'featured_project',
+	'meta_value' => 'yes',
 	'post_type' => 'portfolio'
 	);
 	$query = new WP_Query( $args );
 ?>
-	<h1>Featured Work</h1>
+	<h1 class="page-title">Featured Work</h1>
 	<?php while ($query->have_posts()) : $query->the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
 	<header>
 		<h2 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	</header>
-	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
+	<p><?php the_excerpt();?></p>
+	<p><a href="<?php the_permalink(); ?>" rel="bookmark">Read More about the <?php the_title(); ?></a></p>
+
 	</article>
 <?php 
 endwhile;  
