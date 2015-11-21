@@ -12,7 +12,7 @@
 // Simply replace post_class() with post_class('panel') and check your site!
 // Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
-<div class="col-md-4 col-sm-1">
+<div class="col-lg-4 col-md-6 col-sm-12">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<div id="thumb">
@@ -23,7 +23,7 @@
 		<h2 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		
-	</header>-->
+	</header>
 	<!-- .entry-header -->
 	<?php if ( is_search() || is_archive() ) : // Only display Excerpts for Search and Archive Pages ?>
 	<div class="entry-summary">

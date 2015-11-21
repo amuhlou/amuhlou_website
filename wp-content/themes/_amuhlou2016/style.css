@@ -313,8 +313,8 @@ display: block;
 
 #thumb a img {
 	-webkit-clip-path: circle(50% at 50% 50%);
-	-moz-clip-path: circle(50% at 50% 50%);
 	clip-path: circle(50% at 50% 50%);
+	/*-moz-clip-path: url('#thumbimg');*/
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
@@ -384,6 +384,10 @@ h6 {
 a {
 	text-decoration: underline;
 	color: #316765;
+}
+
+h1.page-title {
+	text-align: center;
 }
 /*
  == Quick CSS styling tips ==
