@@ -19,7 +19,8 @@ get_header(); ?>
 	</div>
 <?php if ( is_active_sidebar( 'about-sidebar' ) ): ?>
 	<div class="sidebar col-sm-12 col-md-4">
-<?php get_sidebar('about-sidebar'); ?>
+	<?php dynamic_sidebar('about-sidebar'); ?>
 </div>
+
 <?php endif; ?>
 <?php get_footer(); ?>

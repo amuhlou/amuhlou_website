@@ -409,6 +409,12 @@ a {
 h1.page-title, h2.page-title {
 	text-align: center;
 }
+
+#colophon {
+	background-color: #2F827F;
+	color: #FFF;
+	padding: 20px 0 0;
+}
 /*
  == Quick CSS styling tips ==
 

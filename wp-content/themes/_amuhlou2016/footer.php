@@ -20,7 +20,10 @@
 
 				<div class="site-info">
 					<?php do_action( '_amuhlou2016_credits' ); ?>
-					
+					<?php if ( is_active_sidebar( 'footer' ) ): ?>
+						<?php dynamic_sidebar('footer'); ?>
+					<?php endif;?>
+
 				</div><!-- close .site-info -->
 
 			</div>
