@@ -330,7 +330,7 @@ transition:all 0.3s ease;
     opacity: 1;
 }
 .hero {margin-bottom: 40px;}
-.hero img {
+.hero img, .entry-content-thumbnail img {
 	border: 1px solid #3FB0AC;
 }
 .featured {
