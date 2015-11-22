@@ -65,6 +65,8 @@ function _amuhlou2016_setup() {
 		'primary'  => __( 'Header bottom menu', '_amuhlou2016' ),
 	) );
 
+	add_image_size( 'herosize', 450, 300, array( 'left', 'top' ) );
+
 }
 endif; // _amuhlou2016_setup
 add_action( 'after_setup_theme', '_amuhlou2016_setup' );
