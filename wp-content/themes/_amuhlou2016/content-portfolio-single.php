@@ -25,19 +25,14 @@
 		<h2>Role</h2>
 
 			<h2>Tools and Technologies</h2>
-		</div>
-
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
+			<footer class="entry-meta">
 		<?php
 			$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
 			/* translators: used between list items, there is a space after the comma */
 			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
 
 			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', '_amuhlou2016' ) );
-
+			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', '', ', ', '' );
 			if ( ! _amuhlou2016_categorized_blog() ) {
 				// This blog only has 1 category so we just need to worry about tags in the meta text
 				if ( '' != $tag_list ) {
@@ -67,4 +62,9 @@
 
 		<?php edit_post_link( __( 'Edit', '_amuhlou2016' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+		</div>
+
+	</div><!-- .entry-content -->
+
+	
 </article><!-- #post-## -->

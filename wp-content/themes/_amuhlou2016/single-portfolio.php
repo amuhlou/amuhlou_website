@@ -11,16 +11,15 @@ get_header(); ?>
         <div class="col-md-10 col-md-offset-1">
 		<?php get_template_part( 'content-portfolio', 'single' ); ?>
 
-		<?php _amuhlou2016_content_nav( 'nav-below' ); ?>
+		<?php //_amuhlou2016_content_nav( 'nav-below' ); ?>
 
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template
-			if ( comments_open() || '0' != get_comments_number() )
-				comments_template();
-		?>
+		
         </div>
 	<?php endwhile; // end of the loop. ?>
-
+	<div class="row">
+<div class="col-md-12 text-center">
+<a href="/portfolio" class="btn btn-lg btn-primary">View All Portfolio Items</a></div>
+</div>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
 <?php endif; ?>
