@@ -25,7 +25,7 @@
 		$role = get_post_meta($post->ID, 'role');
 		if($role):
 		?>
-		<h2>Role</h2>
+		<h3>Role</h3>
 		<ul>
 		<?php 
 		foreach($role as $name) {
@@ -46,7 +46,7 @@
 			if($tag_list): 
 
 			?>
-		<h2>Tools and Technologies</h2>
+		<h3>Tools and Technologies</h3>
 			<ul>
 			<?php
 				echo $tag_list;
