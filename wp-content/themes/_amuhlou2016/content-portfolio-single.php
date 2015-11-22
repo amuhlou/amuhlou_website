@@ -42,7 +42,7 @@
 			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
 
 			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', '<li>', '', '</li>' );
+			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', '<li>', '</li><li>', '</li>' );
 			if($tag_list): 
 
 			?>
