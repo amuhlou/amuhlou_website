@@ -9,10 +9,12 @@
 		<h1 class="page-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<div class="entry-content-thumbnail">
+	<div class="entry-content row">
+		<div class="entry-content-thumbnail col-md-6 col-sm-12">
 			<?php the_post_thumbnail(); ?>
 		</div>
+		<div class="col-md-6 col-sm-12">
+		<h2>About the Project</h2>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -20,6 +22,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<h2>Role</h2>
+
+			<h2>Tools and Technologies</h2>
+		</div>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
