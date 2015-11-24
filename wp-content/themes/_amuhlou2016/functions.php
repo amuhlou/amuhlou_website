@@ -96,13 +96,33 @@ function _amuhlou2016_widgets_init() {
 		'after_widget'  => '</div>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Footer', '_amuhlou2016' ),
-		'id'            => 'footer',
-		'before_widget' => '<div>',
+		'name'          => __( 'Footer Left', '_amuhlou2016' ),
+		'id'            => 'footer-left',
+		'before_widget' => '<div class="left col-md-6">',
+		'after_widget'  => '</div>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Right', '_amuhlou2016' ),
+		'id'            => 'footer-right',
+		'before_widget' => '<div class="right col-md-6">',
 		'after_widget'  => '</div>',
 	) );
 }
 add_action( 'widgets_init', '_amuhlou2016_widgets_init' );
+
+// highlight active custom post page in nav
+add_filter( 'nav_menu_css_class', '_amuhlou2016_menu_classes', 10, 2 );
+function _amuhlou2016_menu_classes( $classes , $item ){
+    if ( get_post_type() == 'portfolio' ) {
+        // remove unwanted classes if found
+        $classes = str_replace( 'current_page_parent active', '', $classes );
+        // find the url you want and add the class you want
+        if ( $item->url == '/portfolio' ) {
+            $classes = str_replace( 'menu-item', 'menu-item current_page_parent active', $classes );
+        }
+    }
+    return $classes;
+}
 
 /**
  * Enqueue scripts and styles

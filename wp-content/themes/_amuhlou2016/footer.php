@@ -20,10 +20,14 @@
 
 				<div class="site-info">
 					<?php do_action( '_amuhlou2016_credits' ); ?>
-					<?php if ( is_active_sidebar( 'footer' ) ): ?>
-						<?php dynamic_sidebar('footer'); ?>
+					<?php if ( is_active_sidebar( 'footer-left' ) ): ?>
+						<?php dynamic_sidebar('footer-left'); ?>
 					<?php endif;?>
 
+					<?php if ( is_active_sidebar( 'footer-right' ) ): ?>
+						<?php dynamic_sidebar('footer-right'); ?>
+					<?php endif;?>
+					<p><a href="<?php echo wp_login_url(); ?>" title="Login">Login</a></p>
 				</div><!-- close .site-info -->
 
 			</div>
