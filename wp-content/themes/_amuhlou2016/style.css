@@ -385,19 +385,19 @@ h3 {
 }
 
 h4 {
-	font-size: 1.7em;
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-weight: 500;
-}
-
-h5 {
 	font-size: 1.5em;
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-weight: 500;
 }
 
+h5 {
+	font-size: 1.3em;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 500;
+}
+
 h6 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-weight: 500;
 }
