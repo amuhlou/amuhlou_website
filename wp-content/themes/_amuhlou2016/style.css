@@ -425,20 +425,8 @@ h1.page-title, h2.page-title {
 	min-height: 75px;
 }
 
-.resume h2::after {
-	content: "  +";
-	font-size: 1em;
-	color: #594c44;
-	cursor: pointer;
-	font-family: 'Helvetica', 'Arial', sans-serif;
-}
-.resume h2.open::after {
-	content: "  -";
-		cursor: pointer;
-}
-
-.resume div {
-
+aside.widget::after {
+	content:" ";
 }
 /*
  == Quick CSS styling tips ==
