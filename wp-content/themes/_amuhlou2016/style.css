@@ -423,6 +423,9 @@ h1.page-title, h2.page-title {
 	min-height: 120px;
 	margin: 0 10px;
 }
+.sidebar .wp-caption a {
+	min-height: 100px;
+}
 /*
  == Quick CSS styling tips ==
 
