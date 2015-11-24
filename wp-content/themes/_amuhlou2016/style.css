@@ -415,6 +415,12 @@ h1.page-title, h2.page-title {
 	color: #FFF;
 	padding: 20px 0 0;
 }
+
+#colophon a {color: #fff;font-weight: normal;text-decoration: underline;}
+
+.sidebar .wp-caption {
+	float: left;
+}
 /*
  == Quick CSS styling tips ==
 

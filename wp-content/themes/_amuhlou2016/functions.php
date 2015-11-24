@@ -94,6 +94,8 @@ function _amuhlou2016_widgets_init() {
 		'id'            => 'about-sidebar',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer Left', '_amuhlou2016' ),
