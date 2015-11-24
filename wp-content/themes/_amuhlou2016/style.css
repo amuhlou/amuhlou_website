@@ -420,6 +420,8 @@ h1.page-title, h2.page-title {
 
 .sidebar .wp-caption {
 	float: left;
+	min-height: 120px;
+	margin: 0 10px;
 }
 /*
  == Quick CSS styling tips ==
