@@ -425,8 +425,8 @@ h1.page-title, h2.page-title {
 	min-height: 75px;
 }
 
-aside.widget::after {
-	content:" ";
+.sidebar aside.widget {
+	overflow: auto;
 }
 /*
  == Quick CSS styling tips ==
