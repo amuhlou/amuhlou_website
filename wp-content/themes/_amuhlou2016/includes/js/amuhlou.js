@@ -1,12 +1,8 @@
-$(function(){
-
-    $('.resume h2').toggle(
-            function(){
-                $(this).next().hide();
-            }, function(){
-                $(this).next().show();
-            }
-        
-    );
-  
+jQuery( document ).ready( function( $ ) {
+    /*$('.resume div').hide();
+    $('.resume h2').click(function(e){
+        $(this).toggleClass('open');
+        $(this).next().slideToggle();
+    });
+    */
 });

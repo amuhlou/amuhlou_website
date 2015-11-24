@@ -92,8 +92,8 @@ function _amuhlou2016_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'About Sidebar', '_amuhlou2016' ),
 		'id'            => 'about-sidebar',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
@@ -149,7 +149,7 @@ function _amuhlou2016_scripts() {
 	// load bootstrap wp js
 	wp_enqueue_script( '_amuhlou2016-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
-	wp_enqueue_script( '_amuhlou2016-custom', get_template_directory_uri() . '/includes/js/amuhlou.js', array('jquery') );
+	wp_enqueue_script( '_amuhlou2016-custom', get_template_directory_uri() . '/includes/js/amuhlou.js', array('jquery', 'jquery-ui-core') );
 
 	wp_enqueue_script( '_amuhlou2016-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
