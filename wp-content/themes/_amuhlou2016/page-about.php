@@ -11,7 +11,7 @@ get_header(); ?>
 <header>
         <h1 class="page-title"><?php the_title(); ?></h1>
     </header><!-- .entry-header -->
-<div class="col-md-7 col-md-offset-1 col-sm-12">
+<div class="col-md-8 col-sm-12">
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'page-about' ); ?>

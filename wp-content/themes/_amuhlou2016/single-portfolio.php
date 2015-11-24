@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
 		<?php get_template_part( 'content-portfolio', 'single' ); ?>
 
 		<?php //_amuhlou2016_content_nav( 'nav-below' ); ?>

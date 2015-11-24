@@ -68,7 +68,7 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
-			<div class="site-header-inner col-sm-10 col-sm-offset-1">
+			<div class="site-header-inner col-sm-12">
 
 				<?php if ( is_active_sidebar( 'hero-banner' ) ) {
 					
