@@ -149,6 +149,8 @@ function _amuhlou2016_scripts() {
 	// load bootstrap wp js
 	wp_enqueue_script( '_amuhlou2016-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
+	wp_enqueue_script( '_amuhlou2016-custom', get_template_directory_uri() . '/includes/js/amuhlou.js', array('jquery') );
+
 	wp_enqueue_script( '_amuhlou2016-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
