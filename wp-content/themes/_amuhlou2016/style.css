@@ -382,10 +382,14 @@ h2 {
 
 h3 {
 	font-size: 2em;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 500;
 }
 
 h4 {
 	font-size: 1.7em;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: 500;
 }
 
 h5 {
@@ -424,7 +428,8 @@ h1.page-title, h2.page-title {
 	margin: 0 10px;
 }
 .sidebar .wp-caption a {
-	min-height: 100px;
+	display: block;
+	min-height: 75px;
 }
 /*
  == Quick CSS styling tips ==
