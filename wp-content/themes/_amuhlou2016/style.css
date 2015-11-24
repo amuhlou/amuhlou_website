@@ -430,6 +430,15 @@ h1.page-title, h2.page-title {
 .sidebar aside.widget {
 	overflow: auto;
 }
+
+.wpcf7-form div {
+	float: left;
+	width: 50%;
+}
+
+.wpcf7-form p.submit {
+	clear: both;
+}
 /*
  == Quick CSS styling tips ==
 
