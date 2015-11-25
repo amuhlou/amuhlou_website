@@ -46,7 +46,8 @@ get_header(); ?>
             <?php get_template_part( 'no-results', 'archive' ); ?>
 
         <?php endif; ?>
-
+        <div class="col-md-12 text-center">
+<a href="/portfolio" class="btn btn-lg btn-default">View All Portfolio Items</a></div>
     </div><!-- .content-padder -->
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>

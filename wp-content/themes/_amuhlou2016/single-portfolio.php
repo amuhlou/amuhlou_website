@@ -18,7 +18,7 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 	<div class="row">
 <div class="col-md-12 text-center">
-<a href="/portfolio" class="btn btn-lg btn-primary">View All Portfolio Items</a></div>
+<a href="/portfolio" class="btn btn-lg btn-default">View All Portfolio Items</a></div>
 </div>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>
 <?php get_sidebar(); ?>
