@@ -450,6 +450,8 @@ h1.page-title, h2.page-title {
 .wpcf7-form p.submit {
 	clear: both;
 }
+
+p {margin-bottom: 15px;}
 /*
  == Quick CSS styling tips ==
 
