@@ -453,7 +453,16 @@ h1.page-title, h2.page-title {
 .wpcf7-form p.submit {
 	clear: both;
 }
-
+h1 span.categories {
+	background: #F7F3E6;
+	display: inline-block;
+	font-size: 0.35em;
+	text-transform: uppercase;
+	padding: 15px 10px 11px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	line-height: 1em;
+	vertical-align: top;
+}
 p {margin-bottom: 15px;}
 /*
  == Quick CSS styling tips ==

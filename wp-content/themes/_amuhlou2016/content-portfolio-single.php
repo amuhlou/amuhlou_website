@@ -6,7 +6,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1 class="page-title"><?php the_title(); ?></h1>
+		<?php
+		$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
+		?>
+		<h1 class="page-title"><?php the_title(); ?> <span class="categories"><?php printf($category_list); ?></span></h1>
+		
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content row">
@@ -36,14 +41,13 @@ if ( has_post_thumbnail() ) {
 			} else {
 				echo ' ' . $name . ',';
 			}
+			
 		}
 		?>
 	<?php endif; ?>
 	</p>
 	<?php
-			$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
-			/* translators: used between list items, there is a space after the comma */
-			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
+			
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', ' ', ', ', ' ' );
@@ -72,13 +76,14 @@ if ( has_post_thumbnail() ) {
 		
 
 		<?php 
-			printf(
+			/*printf(
 				$meta_text,
 				$category_list,
 				$tag_list,
 				get_permalink(),
 				the_title_attribute( 'echo=0' )
 			);
+			*/
 		?>
 
 		<?php edit_post_link( __( 'Edit', '_amuhlou2016' ), '<span class="edit-link">', '</span>' ); ?>
