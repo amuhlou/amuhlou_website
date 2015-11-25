@@ -22,6 +22,41 @@ if ( has_post_thumbnail() ) {
 		</div>
 		<div class="col-md-6 col-sm-12">
 		<h2>About the Project</h2>
+		<div class="well">
+		<?php
+			$role = get_post_meta($post->ID, 'role');
+			if($role):
+		?>
+		<p><strong>Role:</strong>
+		<?php 
+		$total = count($role);
+		foreach($role as $index => $name) {
+			if($index + 1 == $total) {
+				echo ' ' . $name;
+			} else {
+				echo ' ' . $name . ',';
+			}
+		}
+		?>
+	<?php endif; ?>
+	</p>
+	<?php
+			$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
+			/* translators: used between list items, there is a space after the comma */
+			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
+
+			/* translators: used between list items, there is a space after the comma */
+			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', ' ', ', ', ' ' );
+			if($tag_list): 
+
+			?>
+		<p><strong>Tools &amp; Technologies:</strong>
+
+			<?php
+				echo $tag_list;
+			
+				endif;
+		?></p></div>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -29,38 +64,13 @@ if ( has_post_thumbnail() ) {
 				'after'  => '</div>',
 			) );
 		
-		$role = get_post_meta($post->ID, 'role');
-		if($role):
+		
 		?>
-		<h3>Role</h3>
-		<ul>
-		<?php 
-		foreach($role as $name) {
-			echo '<li>' . $name . '</li>';
-		}
-		?>
-		</ul>
-	<?php endif; ?>
+
 
 			
-		<?php
-			$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
-			/* translators: used between list items, there is a space after the comma */
-			//$category_list = get_the_category_list( __( ', ', '_amuhlou2016' ) );
+		
 
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_term_list( $post->ID, 'portfolio_tag', '<li>', '</li><li>', '</li>' );
-			if($tag_list): 
-
-			?>
-		<h3>Tools and Technologies</h3>
-			<ul>
-			<?php
-				echo $tag_list;
-			
-				endif;
-		?>
-			</ul>
 		<?php 
 			printf(
 				$meta_text,

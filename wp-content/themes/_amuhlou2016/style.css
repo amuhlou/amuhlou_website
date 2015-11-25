@@ -348,10 +348,21 @@ transition:all 0.3s ease;
 }
 
 .entry-content.row {
+
+}
+.well {
 	background-color: #f7f3e6;
-	padding: 15px 0;
+	box-shadow: none;
+	border: 1px solid #E2D9BE
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+
 }
 
+.well p:last-child {
+	margin-bottom: 0;
+}
 
 /* Type Styles */
 
