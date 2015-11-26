@@ -38,7 +38,7 @@ endwhile;
 </div></div>
 <div class="row">
 <div class="col-md-12 text-center">
-<a href="/portfolio" class="btn btn-lg btn-primary">View Full Portfolio</a></div>
+<a href="/portfolio" class="btn btn-lg btn-default">View Full Portfolio</a></div>
 </div>
 </div>
 <?php if ( is_active_sidebar( 'sidebar-1' ) ): ?>

@@ -302,6 +302,9 @@ display: block;
 		font-size:1.5em;
 	}
 	.site-header img {display: none;}
+	h1 {
+		font-size: 1.5em;
+	}
 }
 
 @media screen and (max-width: 340px) {
@@ -453,16 +456,23 @@ h1.page-title, h2.page-title {
 .wpcf7-form p.submit {
 	clear: both;
 }
-h1 span.categories {
+header h1.page-title {
+	margin-bottom: 10px;
+}
+header p.categories {
+	text-align: center;
+	font-size: 0.9em;
+}
+header p.categories span {
 	background: #F7F3E6;
 	display: inline-block;
-	font-size: 0.35em;
 	text-transform: uppercase;
-	padding: 15px 10px 11px;
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	padding: 12px 10px 10px;
 	line-height: 1em;
 	vertical-align: top;
+	
 }
+header p.categories span:first-child {background-color: transparent;}
 p {margin-bottom: 15px;}
 /*
  == Quick CSS styling tips ==

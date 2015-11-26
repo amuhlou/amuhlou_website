@@ -9,7 +9,8 @@
 		<?php
 		$category_list = get_the_term_list( $post->ID, 'portfolio_category', '', ', ', '' );
 		?>
-		<h1 class="page-title"><?php the_title(); ?> <span class="categories"><?php printf($category_list); ?></span></h1>
+		<h1 class="page-title"><?php the_title(); ?></h1>
+		<p class="categories"><span>Posted in: </span><span><?php printf($category_list); ?></span></p>
 		
 		
 	</header><!-- .entry-header -->
